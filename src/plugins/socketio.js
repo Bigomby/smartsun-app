@@ -1,7 +1,7 @@
 import VueSocketio from 'vue-socket.io';
 import Socket from 'socket.io-client';
 
-const socket = Socket('http://localhost:3000/status');
+const socket = Socket(process.env.STATUS_URL);
 
 export default ({ Vue, store }) => {
   Vue.use(VueSocketio, socket, store);

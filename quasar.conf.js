@@ -1,3 +1,7 @@
+const env = {
+  STATUS_URL: process.env.STATUS_URL || '"http://localhost:3000/status"',
+};
+
 module.exports = function(ctx) {
   return {
     plugins: ['pouch', 'vuelidate', 'socketio'],
@@ -14,6 +18,7 @@ module.exports = function(ctx) {
     },
 
     build: {
+      env,
       scopeHoisting: true,
       vueRouterMode: 'history',
       extendWebpack(cfg) {
