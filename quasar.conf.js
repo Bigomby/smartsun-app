@@ -1,6 +1,6 @@
 module.exports = function(ctx) {
   return {
-    plugins: [],
+    plugins: ['pouch', 'vuelidate', 'socketio'],
 
     css: ['app.styl'],
 
@@ -40,15 +40,28 @@ module.exports = function(ctx) {
         'QToolbar',
         'QToolbarTitle',
         'QBtn',
+        'QBtnGroup',
         'QIcon',
         'QList',
         'QListHeader',
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QItemSeparator',
+        'QCard',
+        'QCardTitle',
+        'QCardMain',
+        'QCardActions',
+        'QCardSeparator',
+        'QChip',
+        'QTable',
+        'QTd',
+        'QModal',
+        'QField',
+        'QInput',
       ],
       directives: ['Ripple'],
-      plugins: ['Notify'],
+      plugins: ['Notify', 'Dialog'],
     },
 
     animations: [],

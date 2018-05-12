@@ -5,15 +5,15 @@
         <div
           :style="{ 'background-image': `url(${image})`}"
           class="profile-image" />
-        <online-status />
-
         <br>
 
         <q-item>
           <q-item-main
             class="text-white"
             align="center">
-            {{ businessName }}
+            <p class="q-title">
+              {{ businessName }}
+            </p>
           </q-item-main>
         </q-item>
       </q-item-main>
@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       image:
-        'https://theroguenews.com/wp-content/uploads/2012/06/Suntanning-sun.bmp',
+        'http://cdn2.momjunction.com/wp-content/uploads/2015/06/Tanning-Beds-While-Breastfeeding.jpg',
       businessName: 'Centro de Bronceado Oclose',
     };
   },
@@ -41,5 +41,6 @@ export default {
   width: 200px;
   padding-top: 200px;
   background-size: cover;
+  background-position: center;
 }
 </style>

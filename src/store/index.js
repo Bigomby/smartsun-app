@@ -1,14 +1,10 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-import example from './module-example'
+import machines from './machines';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-const store = new Vuex.Store({
-  modules: {
-    example
-  }
-})
+const store = new Vuex.Store({ modules: { machines } });
 
-export default store
+export default store;

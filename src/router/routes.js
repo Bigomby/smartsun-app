@@ -11,6 +11,10 @@ export default [
         path: 'dashboard',
         component: () => import('pages/dashboard'),
       },
+      {
+        path: 'machines',
+        component: () => import('pages/machines'),
+      },
     ],
   },
 
